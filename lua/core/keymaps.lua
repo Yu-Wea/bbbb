@@ -15,6 +15,8 @@ vim.keymap.set("n", "<leader><cr>", ":nohlsearch<cr>", opts)
 --vim.keymap.set("n", "<c-u>", ":w<enter>", opts)
 --vim.keymap.set("i", "<c-u>", "<esc>", opts)
 
+vim.keymap.set("i", "jk", "<esc>")
+
 vim.keymap.set("n", "J", "5j")
 vim.keymap.set("n", "K", "5k")
 vim.keymap.set("n", "dL", "d$")

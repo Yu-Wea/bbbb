@@ -97,6 +97,8 @@ return require("packer").startup(function(use)
   use({ "ray-x/cmp-treesitter" })
   use({ "onsails/lspkind.nvim" })
 
+  use({ "ray-x/lsp_signature.nvim" })
+
   -- languages
   --  use({ "mfussenegger/nvim-dap" })
   --  use({ "theHamsta/nvim-dap-virtual-text" })
@@ -117,15 +119,15 @@ return require("packer").startup(function(use)
 
   --  use({ "h-hg/fcitx.nvim" })
 
-  --  use({ "godlygeek/tabular", ft = { "markdown" } }) -- requires
-  --  use({ "plasticboy/vim-markdown", ft = { "markdown" } })
-  --  use({
-  --    "iamcco/markdown-preview.nvim",
-  --    run = function()
-  --      vim.fn["mkdp#util#install"]()
-  --    end
-  -- })
-  -- use({ "dhruvasagar/vim-table-mode" })
+  use({ "godlygeek/tabular", ft = { "markdown" } }) -- requires
+  use({ "plasticboy/vim-markdown", ft = { "markdown" } })
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end
+  })
+  use({ "dhruvasagar/vim-table-mode" })
 
   --  use({ "mbbill/undotree" })
 
